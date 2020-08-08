@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charse t="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="icon" type="images/png" href="images/logo.png">
+    <title>Tienda virtual</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
+      rel="stylesheet"/>
+  </head>
+
+  <body class="body">
+   
+    <header class="header">  
+      <nav class="nav_contenedor">
+          <img class="image_logo" src=" images/logo.png" alt="logotipo" width="160px" height="120px">
+          <ul class="ul_contenedor">
+            <li class="nav_item"><a href="/smart-cities">Smart Cities</a></li>
+            <li class="nav_item"><a href="/contacto">Contacto</a></li>
+            <li class="nav_item"><a href="/iniciar sesion">Iniciar Sesion</a></li>
+            <img class="image_menu" src="images/menu.png" alt="menu" width="50px" height="50px">
+          </ul>
+      </nav>
+          <section class="text_principal">
+            <h1>Smart Space</h1>
+          </section>
+          <section class="text_secundario">
+            <p class="intro">Mecanismo de conexión y participación ciudadana.</p>
+          </section>
+   </header>
+   
+  <main id="main">
+    <h2 class="main_titulo">Eventos</h2>  
+    <section class="main_section">  
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="backward button"></button>
+          <div class="window">
+            <ul class="project-container">
+              <li class="project1-container"><button class="project1 project"><img src="images/medellin.jpg" class="project-img" alt="oferta medellin"/></button></li>
+              <li class="project2-container"><button class="project2 project"><img src="images/cali.jpg" class="project-img" alt="oferta cali"/></button></li>
+              <li class="project4-container" aria-hidden="true"><button class="project4 project" tabindex="-1"><img src="images/londres.jpg" class="project-img" alt="oferta londres"/></button></li>
+              <li class="project5-container" aria-hidden="true"><button class="project5 project" tabindex="-1"><img src="images/new york.jpg" class="project-img" alt="oferta new york"/></button></li>
+            </ul>
+          </div>
+        <button class="arrow arrow-right" aria-label="forward button"></button>
+      </div>
+  </section>
+  </main>
+    <div class="notification" aria-live="assertive"></div>
+    <p class="send-button"></p>
+    <div class="modal-container">
+      <div class="modal">
+        <h2  id="modal-header" tabindex="0">Campus Party</h2>
+          <p class="modal_text">Reconoce la importancia de las ciudades inteligentes como mecanismo de conexión y participación ciudadana
+            Reconoce la importancia de las ciudades inteligentes como mecanismo de conexión y participación ciudadana
+          </p>
+          <div class="compra">
+            <p>Precio: $500.000</p>
+            <input type="radio" class="boton"><img src="images/carrito.svg" width="60px" height="60px">
+          </div>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+
+    <footer class="contact-section">
+      <div class="footer_images">
+        <p>Nunca pares de aprender</p>
+        <div class="footer_aliados">
+          <img src="images/image.png"width="100px" height="50px" alt="logo-platzi">
+          <img src="images/logo-footer.png" width="100px" height="100px" alt="logo-reenig">
+        </div>
+    </div>
+    <div>
+      <ul class="social-media">
+        <li>
+          <a href="https://twitter.com/JuanchoHerreraC" target="_blank"
+            ><img src="images/twitter.svg"width="30px" height="30px" alt="Twitter"
+          />
+        <p class="social-link-text">Twitter</p>
+        </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/sebastian.herrera.94064" target="_blank"
+            ><img src="images/facebook.svg" width="30px" height="30px" alt="facebook"
+          />
+          <p class="social-link-text">facebook</p></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/juanchoherrera27/" target="_blank"
+            ><img src="images/instagram.svg" width="30px" height="30px" alt="instagram"
+          />
+          <p class="social-link-text">instagram</p></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+    <script src="tienda.js" type="text/javascript"></script>
+  </body>
+</html>

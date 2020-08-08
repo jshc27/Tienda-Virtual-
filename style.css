@@ -1,0 +1,455 @@
+/* css reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*--- end of reset ----*/
+
+:root {
+  --blanco: white;
+  --gris-medio: #333333;
+  --gris-oscuro: #24343b;
+  --gris: rgb(205, 208, 231);
+  --hover:  linear-gradient(286deg, rgba(0,0,0,0.6222864145658263) 0%, rgba(49,87,199,0.6306897759103641) 13%);
+  --main-font: "Oswald", sans-serif;
+  --secondary-font: "Open Sans", sans-serif;
+  --shadow: rgba(0, 0, 0, 0.75);
+  --tamaño-letra-general: 15px;
+  --tamaño-letra-titulo: 25px;
+  --color: black;
+  --letra-p-media: 15px;
+  --letra-s-media: 13px;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 400px;
+  background-image: url('https://image.freepik.com/foto-gratis/futuro-robot-inteligencia-artificial-cyborg_31965-6358.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav_contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ul_contenedor {
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.nav_item a {
+  text-decoration: none;
+  margin: 8px;
+  color: #042256;
+  font-size: var(--tamaño-letra-general);
+}
+
+.image_menu {
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+.image_logo {
+  margin-top: 20px;
+  margin-left: 10px;
+  
+}
+
+/*---------main----------*/
+.main_titulo {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.text_principal{
+  text-align: center;
+  margin-top: 70px;
+  letter-spacing: 5px;
+}
+.text_secundario {
+  display: flex;
+  margin: 24px 200px 0;
+  width: 300px;
+  position: relative;
+  left: 23%;
+  bottom: -20px;
+}
+.intro {
+  text-align: center;
+  margin-top: 30px;
+  font-family: var(--secondary-font);
+  
+}
+
+.nav-item {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  font-family: var(--secondary-font);
+  height: 30px;
+  justify-content: center;
+  width: 33%;
+}
+
+.nav_item:hover,
+.nav_item:hover a {
+  background-color:var(--blanco);
+  color: var(--gris-oscuro);
+  cursor: pointer;
+}
+
+.nav_item:focus-within {
+ background-color: var(--blanco); 
+}
+
+.nav_item a:focus {
+  outline: none;
+  color: var(--gris-oscuro);
+}
+
+
+.social-media {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  margin-right: 50px;
+}
+
+.social-media li a {
+  align-items: center;
+  display: flex;
+  color: var(--blanco);
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  margin: 5px;
+ 
+}
+
+.social-media li a:focus{
+  outline: none;
+  color: var(--blanco);
+}
+
+.social-media li:focus-within {
+  outline: 3px solid var(--hover);
+  padding: 8px;
+}
+
+.social-link-text {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.carousel {
+  align-items: center;
+  display: flex;
+  margin: 48px 0 64px;
+}
+
+.main_section {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+.window {
+  overflow: hidden;
+  width: 815px;
+  padding: 8px;
+}
+
+.project-container {
+  left: 0;
+  position: relative;
+  width: 1500px;
+}
+
+.project-container li {
+  display: inline-block;
+}
+
+.project-container button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.project-container button:focus-within {
+  outline: 3px solid var(--hover);
+}
+
+.project-img {
+  border-radius: 10px;
+  border: 2px solid #000;
+  display: inline-block;
+  height: 400px;
+  margin: 0 8px;
+  transition: all 0.2s ease-in-out;
+  width: 250px;
+  object-fit: cover;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.arrow {
+  height: 75px;
+  transition: all 0.2s ease-in-out;
+  width: 75px;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.arrow-left {
+  background: center / contain no-repeat url(./images/play-button-left.png);
+  background-color: var(--hover);
+  border-radius: 50%;
+}
+
+.arrow-right {
+  background: center / contain no-repeat url(./images/play-button-right.png);
+  background-color: var(--hover);
+  border-radius: 50%;
+}
+
+.arrow:focus {
+  outline: 3px solid var(--hover);
+}
+
+.contact-section {
+  align-items: center;
+  background-color: var(--gris-oscuro);
+  font-size: var(--secondary-font);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer_images {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  color: var(--blanco);
+}
+
+
+input {
+  width: 100%;
+}
+
+input:focus {
+  outline: 3px solid var(--gris);
+  padding: 8px;
+}
+.modal-button {
+  align-items: center;
+  background-color: var(--blanco);
+  border-radius: 5px;
+  color: var(black);
+  font-family: var(--secondary-font);
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  width: 150px;
+  margin-left: auto;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.send-button:focus,
+.modal-button:focus {
+  border: 5px solid var(--gris-oscuro);
+  outline: 3px solid var(--hover);
+}
+
+/** --------------modal------------**/
+.notification {
+  align-items: center;
+  background-color: var(--hover);
+  border-radius: 5px;
+  box-shadow: 8px 16px 32px 0px var(--shadow);
+  color: var(--gris-oscuro);
+  display: none;
+  font-family: var(--secondary-font);
+  height: 50px;
+  justify-content: center;
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  width: 300px;
+}
+
+.modal-container {
+  align-items: center;
+  background-color: rgba(000, 000, 000, 0.2);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+}
+
+#modal-header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: var(--blanco);
+}
+
+.compra {
+  border-radius: 15px;
+  color:var(--gris-oscuro);
+  background: var(--blanco);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.compra  p{
+  margin: 20px;
+  width: 150px;
+}
+.boton {
+  position: relative;
+  top: 5%;
+  left: 10%;
+}
+.modal {
+  align-items: center;
+  background-color: var(--gris-oscuro);
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #000;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  justify-content: center;
+  position: fixed;
+  top: 5%;
+  padding: 56px;
+}
+
+/**---------Responsive-----------**/
+
+@media screen and (max-width: 320px) {
+
+    .header {
+      height: 250px;
+    }
+    .ul_contenedor {
+      text-align: center;
+    }
+    .image_logo {
+      width: 70px;
+      margin-top: 10px;
+    }
+    .nav_item a{
+      font-size: var(--letra-s-media);
+      display: flex;
+    }
+    .image_menu {
+      margin-top: 0px;
+      margin-left: 12px;
+      width: 40px;
+      height: 40px;;
+    }
+    .text_principal {
+      letter-spacing: 3px;;
+    }
+    .text_secundario {
+      font-size: var(--letra-s-media);
+      display: inline;
+      justify-content: center;
+      margin: auto;
+      position: inherit; 
+    }
+
+    /* -------------- main ---------------*/
+    .window {
+      width: 220px;
+    }
+    .contact-section {
+      display: inherit;
+    }
+    .arrow {
+      width: 35px;
+      height: 35px;
+    }
+    .arrow-left {
+      margin-left: -10px;
+    }
+  
+    .footer_images {
+      display: inherit;
+      text-align: center;
+      margin-left: 0px;
+      padding: 6px;
+    }
+    .social-media {
+      padding: 6px;
+      font-size: var(--letra-s-media);
+      margin-right: 0px;
+    }
+    .footer_aliados {
+      display: flex;
+      align-items: center;
+     justify-content: center;
+    }
+    /* -------------- main-modal ---------------*/
+    .modal {
+      height: 300px;
+      width: 180px;
+    } 
+    .modal_text {
+      font-size: var(--letra-s-media);
+    }
+    .modal-button {
+      margin-top: 10px;
+      margin-left: inherit;
+    }
+    #modal-header {
+      margin-bottom: 5px;
+    }
+    .compra {
+      margin-top: 10px;
+    }
+    .compra p {
+      font-size: var(--letra-s-media);
+    }
+    .compra img {
+      width: 40px;
+      height: 40px;
+    }
+}
+
